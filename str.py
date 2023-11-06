@@ -4,21 +4,22 @@ print("LA PARTIE STR ")
 
 #MASTER STR (index, split, replace, lower, upper, title)
 
-#1.	Nan yon chenn karaktè, mete tout karaktè yo an miniskil
+print("1.	Nan yon chenn karaktè, mete tout karaktè yo an miniskil")
 ma_Chaine="Ayibobo Ayiti"
 ma_Chaine=ma_Chaine.lower()
 print(ma_Chaine)
 
-#2.	Nan yon chenn karaktè, koupe chenn nan tout kote ki gen espas. Epi afiche yon lis ki gen chak eleman yo
+print("#2.	Nan yon chenn karaktè, koupe chenn nan tout kote ki gen espas. Epi afiche yon lis ki gen chak eleman yo")
 ma_Chaine="Ayibobo Ayiti"
 print(ma_Chaine.split(" "))
 
-#6.	Nan yon chenn karaktè, mete tout premye lèt chak mo an majiskil.
+
+print("3.	Nan yon chenn karaktè, mete tout premye lèt chak mo an majiskil.")
 ma_Chaine="je deteste le language python"
 ma_Chaine=ma_Chaine.title()
 print(ma_Chaine)
 
-#7.	Nan yon chenn karaktè, rekipere premye lèt chak mo. Epi afiche yon nouvo chenn ak tout inisyal sa yo.
+print("4.	Nan yon chenn karaktè, rekipere premye lèt chak mo. Epi afiche yon nouvo chenn ak tout inisyal sa yo.")
 chaine1="bonjour tout le monde"
 chaine2=chaine1.split(" ")
 ch2=""
@@ -26,15 +27,14 @@ for ch in chaine2 :
     ch2 += ch[0]
 print(ch2)
 
-#8.	Ranplase tout karaktè "a" ki nan yon chenn pa "@"
+print("5.	Ranplase tout karaktè a ki nan yon chenn pa '@'")
 ma_Chaine="viv lang kreyol la "
 ma_Chaine=ma_Chaine.replace("a", "@")
 print(ma_Chaine)
 
-#9.	Mete yon chenn karaktè devan dèyè, answit mete l an majiskil. 
+print("6.	Mete yon chenn karaktè devan dèyè, answit mete l an majiskil") 
 chaine="salut"
 long=len(chaine)
-print(long)
 inv=""
 j=1
 for i in range(long):
@@ -46,11 +46,11 @@ print(inv.upper())
 
 
 
-#13.	Afiche endeks premye karaktè "a" ki nan yon chenn.
+print("7.	Afiche endeks premye karaktè 'a' ki nan yon chenn.")
 ma_Chaine="Ayiti kapab avanse"
 print(ma_Chaine.index("a"))
 
-#17.	Afiche total tout endeks karaktè "a" ki nan yon chenn (Kit se a majiskil oubyen miniskil).
+print("8.	Afiche total tout endeks karaktè 'a' ki nan yon chenn (Kit se a majiskil oubyen miniskil).")
 chaine="Ayiti kapab avanse"
 long=len(chaine)
 ind=0
@@ -61,7 +61,7 @@ for ch in range(long):
     j +=1
 print(ind)
 
-#21.	Kreye yon lis ki gen endeks tout karaktè "a" ki nan yon chenn (Sèlman a miniskil
+print("9.	Kreye yon lis ki gen endeks tout karaktè 'a' ki nan yon chenn (Sèlman a miniskil")
 chaine="Ayiti kapab avanse"
 lis=[]
 long=len(chaine)
@@ -72,7 +72,7 @@ for ch in range(long):
     j +=1
 print(lis)
 
-#25.	Retire tout espas ki nan yon chenn, epi kole chenn sa ak kantite karaktè li genyen (Pa kontwole espas yo)
+print("10.Retire tout espas ki nan yon chenn, epi kole chenn sa ak kantite karaktè li genyen (Pa kontwole espas yo)")
 chen="ariel henry vole"
 ch=""
 for let in chen :
