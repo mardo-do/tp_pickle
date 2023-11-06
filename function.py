@@ -48,7 +48,18 @@ print("kod aleyatwa san repetisyon  :  ",alafanimerik())
 
 
 print("5.	Ou gen yon lis chenn. Jenere yon SLUG apati chenn nan. ")
-lisMw=["pa1tat","la1m","zoran2j","seriz","ka-wot"]
+lisMw=["pa1tat","la1@m","zoran2*j","seriz","ka-wot"]
+def slug(lis=[]):
+    akseptab=string.ascii_letters + string.digits+"-"
+    slg=""
+    for mo in lis:
+        for let in mo :
+            if let in akseptab:
+                slg+=let
+    return slg
+print(slug(lisMw))
+    
+
 
      
 
@@ -56,24 +67,20 @@ lisMw=["pa1tat","la1m","zoran2j","seriz","ka-wot"]
 
 
 print("6.	Kreye yon fonksyon ki ap separe chak lèt nan yon mo ak yon vigil")
-def separe_let(fraz=""):
-    i=0
-    fraz2=""
-    for mo in fraz:
-        if   mo ==" ":
-            continue
-        else:
-            fraz2+=mo+","
-    return fraz2
+def separe_let(mo=""):
+    let=",".join(mo)
+    return let
 print(separe_let("ayibobo"))
 
 print("7.	Kreye yon fonksyon ki ap kripte yon mo, avèk endèks li nan alfabè a. Chak karaktè dwe separe ak yon tirè")
 def kripte(mo=""):
     alfa="abcdefghijklmnopqrstuvwxyz"
     mo_kripte=""
-    for let in mo:
-        if let in alfa:
-            mo_kripte+="{}-".format(alfa.index(let))
+    for l in range(len(mo)):
+        if l !=len(mo)-1:
+            mo_kripte+=str(alfa.index(mo[l].lower()))+"-"
+        else:
+            mo_kripte+=str(alfa.index(mo[l].lower()))
     return mo_kripte
 print(kripte("alo"))
 
