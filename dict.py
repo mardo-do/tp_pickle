@@ -65,6 +65,59 @@ for tipl in lis:
 print(diks)
 
 
+print("10   Kole 2 diksyonè ansanm pou fè youn, kote si gen eleman ki gen menm kle ap konkatene valè")
+diks1={"a":1, "b": 2, "c":3, "d":(1,2),"mayi":{2:4}}
+diks2={"a":5, "mayi": 2, "ze":3, "d":"dad"}
+diks3={}
+for d1 in diks1.keys():
+    if d1 not in diks2.keys():
+        diks3.update({d1:diks1[d1]})
+    else:
+        if isinstance(diks1[d1], int) and isinstance(diks2[d1], int):
+            val1=diks1[d1] + diks2[d1]
+            diks3.update({d1:val1})
+        elif isinstance(diks1[d1], str) or isinstance(diks2[d1], list) or isinstance(diks2[d1], set) and isinstance(diks1[d1], str) or isinstance(diks2[d1], list) or isinstance(diks2[d1], set):
+        
+            konkat=diks1[d1] + diks2[d1]
+            diks3.update({d1:konkat})
+        else:
+            continue
+
+for d2 in diks2.keys():
+    if d2 not in diks3.keys() and d2 not in diks1.keys():
+        diks3.update({d2:diks2[d2]})
+    else:
+        continue
+
+print(diks3)
+print("10   Kole 2 diksyonè ansanm pou fè youn, kote si gen eleman ki gen menm kle ap konkatene valè")
+diks1={"a":1, "b": 2, "c":3, "d":(1,2),"mayi":{2:4}}
+diks2={"a":5, "mayi": 2, "ze":3, "d":"dad"}
+diks3={}
+for d1 in diks1.keys():
+    if d1 not in diks2.keys():
+        diks3.update({d1:diks1[d1]})
+    else:
+        if isinstance(diks1[d1], int) and isinstance(diks2[d1], int):
+            val1=diks1[d1] + diks2[d1]
+            diks3.update({d1:val1})
+        elif isinstance(diks1[d1], str) or isinstance(diks2[d1], list) or isinstance(diks2[d1], set) and isinstance(diks1[d1], str) or isinstance(diks2[d1], list) or isinstance(diks2[d1], set):
+        
+            konkat=diks1[d1] + diks2[d1]
+            diks3.update({d1:konkat})
+        else:
+            continue
+
+for d2 in diks2.keys():
+    if d2 not in diks3.keys() and d2 not in diks1.keys():
+        diks3.update({d2:diks2[d2]})
+    else:
+        continue
+
+print(diks3)
+
+
+
 
 
 
